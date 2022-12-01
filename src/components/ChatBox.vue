@@ -349,7 +349,7 @@ components: {
         flex-grow: 2;
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
-        background: rgb(10, 49, 82);
+        background: #022422;
         display: flex;
         align-items: center;
   justify-content: center;

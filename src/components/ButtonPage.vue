@@ -8,7 +8,7 @@
             <UilUsersAlt v-if="group" />
             <UilEditAlt v-else-if="edit" />
             <UilSignOutAlt v-else-if ="leave" :style="{ fontSize: '25px' }" />
-            <UilArrowRight v-else />
+            <UilArrowRight v-else  :style="{ fontSize: '1.8rem' }" />
 
 
         </button>

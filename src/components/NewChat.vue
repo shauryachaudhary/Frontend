@@ -322,7 +322,7 @@
   .card {
     width: 90%;
     height: 80%;
-    background: #092b46;
+    background: #022422;
     border-radius: 20px;
     text-align: center;
     display: flex;

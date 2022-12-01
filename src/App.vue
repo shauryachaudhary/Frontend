@@ -54,7 +54,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #ffffff;
-  background: #001425;
+  background: #022422;
   min-height: 100vh;
   overflow-y: hidden;
 }
@@ -65,7 +65,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #001425;
+  background: #022422;
 }
 .views {
   margin-top: 80px;

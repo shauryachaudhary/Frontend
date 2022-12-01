@@ -108,12 +108,11 @@
             <div v-else class="card chat">
                 <ChatBox v-if="$store.getters.chatOpenStatus" />
                 <h2 class="chatBox-msg" v-else>
-                    <img 
-                        src="../assets/logo.png"
-                        alt="Chanty Logo"
-                        width="40"
-                        height="40"
-                    />Open a chat or start new..
+                    <Lottie 
+                    :options="{ animationData: chatboxjson }"
+                            :height="300"
+                            :width="300"
+                    /> 
                 </h2>
         </div>
     </div>
@@ -122,6 +121,7 @@
 import { UilPlus } from '@iconscout/vue-unicons'
 import { UilSearch } from '@iconscout/vue-unicons';
 import json from "../assets/chatAnimate.json";
+import chatboxjson from "../assets/gjson.json";
 import ChatHead from "../components/ChatHead.vue";
 import Lottie from 'vue-lottie';
 import ChatBox from "../components/ChatBox.vue";
@@ -134,6 +134,7 @@ export default {
             chats: [],
             searchText: "",
             chatJson: json,
+            chatboxjson,
          };
     },
     components: { 
@@ -170,7 +171,7 @@ export default {
                         Authorization: `Bearer ${this.$store.getters.user.token}`,
                     },
                 };
-                const { data } = await this.$axios.get(`api/chat`, config);
+                const { data } = await this.$axios.get(`/api/chat`, config);
                 this.$store.commit("SET_CHATS", data);
                 this.chats = data;
                 this.allChats = data;
@@ -212,7 +213,7 @@ export default {
   }
   .card {
     height: 80vh;
-    background: #092b46;
+    background: #017562;
     padding: 10px;
     border-radius: 20px;
     text-align: center;

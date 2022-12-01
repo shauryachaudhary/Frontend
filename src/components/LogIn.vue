@@ -22,7 +22,7 @@
   <script>
   import Button from "./ButtonPage.vue";
 import axios from 'axios';
-// import axios from 'axios';
+
 export default {
     name: "LogIn",
     components: {
@@ -65,16 +65,6 @@ export default {
           },
           config
         );
-      
-       
-            
-
-
-
-
-
-
-
 
     
         localStorage.setItem("user", JSON.stringify(data));

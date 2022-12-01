@@ -177,8 +177,6 @@ export default {
                         "Content-Type": "application/json",
                     },
                 };
-                console.log(this.email);
-                console.log(this.password);
 
                 const { data } = await this.$axios.post(
                     `/api/user`,{

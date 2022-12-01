@@ -165,7 +165,7 @@ export default {
         width: 800px;
         min-height: 400px;
         height: fit-content;
-        background: #092b46;
+        background: #022422;
         padding: 40px;
         border-radius: 20px;
         text-align: center;

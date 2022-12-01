@@ -74,7 +74,7 @@ export default {
     width: fit-content;
     /* min-height: 400px; */
     height: fit-content;
-    background: #092b46;
+    background: #022422;
     padding: 40px;
     border-radius: 20px;
     text-align: center;
@@ -82,8 +82,8 @@ export default {
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
-    box-shadow: 0 0 2px #7facff, 0 0 4px #7facff, 0 0 6px #7facff,
-      0 0 15px #7facff;
+    box-shadow: 0 0 2px rgba(0,255,255,0.7), 0 0 4px rgba(0,255,255,0.7), 0 0 6px rgba(0,255,255,0.7),
+      0 0 15px rgba(0,255,255,0.7);
     position: relative;
   }
   .card img {

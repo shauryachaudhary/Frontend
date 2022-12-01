@@ -6,21 +6,27 @@
 
         </router-link>
         <div class="user" v-if="$store.getters.loginStatus">
-            <img alt="" 
-            @click="
-            () => {
-                $store.commit('SET_PROFILESTATES', $store.getters.user);
-                $store.commit('TOGGLE_PROFILE');
-                $store.commit('SET_ISPROFILE', true);
-            }
-            "
-            class="avatar"  
-            :src="$store.getters.user.avatar"
-            />
+            <div class="block">
+                <img alt="" 
+                @click="
+                () => {
+                    $store.commit('SET_PROFILESTATES', $store.getters.user);
+                    $store.commit('TOGGLE_PROFILE');
+                    $store.commit('SET_ISPROFILE', true);
+                }
+                "
+                class="avatar"  
+                :src="$store.getters.user.avatar"
+                />
+                <div class="user-info">
+                    <h4 class="name">{{ $store.getters.profileStates.name }}</h4>
+                </div>
+            </div>
             <UilSignOutAlt 
             @click="logout" 
             :style="{
                     fontSize: '25px',
+                    
                     color: '#d4122b',
                     cursor: 'pointer',
                 }"
@@ -78,12 +84,27 @@ export default {
     position: fixed;
     top: 0;
 }
+.block {
+    border: 2px solid rgba(0,255,255,0.7);
+    border-radius: 10px;
+    margin: 5px;
+    margin-right: 1rem;
+    
+    
+}
 .navbar {    
     transition: 300ms;
     box-shadow: 0 0 2px rgba(0,255,255,0.7), 0 0 4px rgba(0,255,255,0.7), 0 0 6px rgba(0,255,255,0.7),
      0 0 15px rgba(0,255,255,0.7);
 
 }
+.user-info{
+    margin-right: 12px; 
+}
+h4{
+    margin-left: 13px;
+}
+
 .logoText{ 
     padding: -5rem;
 }
@@ -106,12 +127,14 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .avatar {
-    height: 40px;
+    height: 30px;
+    
     border-radius: 50%;
     width: 30px;
-    margin: 0 10px;
+    margin: 3px 15px;
     cursor: pointer;
     object-fit: cover;
 }

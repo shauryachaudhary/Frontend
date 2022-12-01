@@ -43,7 +43,7 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-bottom: 1px solid #0014256b;
+    border-bottom: 1px solid #53644f;
     cursor: pointer;
     margin-bottom: 5px;
     border-radius: 10px;
