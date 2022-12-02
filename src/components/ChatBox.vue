@@ -155,7 +155,7 @@ components: {
             isLoading: true,
             messages: [],
             message: "",
-            endPoint: "https://backend-babble.herokuapp.com",
+            endPoint: "http://localhost:5000",
             socket: "",
             selectedChatCompare: null,
             socketConnected: false,
