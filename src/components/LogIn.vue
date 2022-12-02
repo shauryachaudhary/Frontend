@@ -76,6 +76,7 @@ export default {
         this.$store.commit("SET_TOKEN", data.token);
         this.$store.commit("SET_ID", data._id);
         this.$store.commit("SET_LOGINSTATUS");
+        this.$store.commit('SET_PROFILESTATES', $store.getters.user);
       } catch (error) {
         this.$emit("stop");
         this.errorMsg = "Invalid Credentials!";

@@ -52,7 +52,7 @@
         <UilSetting 
         v-if="$store.getters.selectedChat.isGroupChat"
             :style="{
-                fontSize: '2rem',
+                fontSize: '2.8rem',
                 padding: '0 10px',
             }"
         />
@@ -155,7 +155,7 @@ components: {
             isLoading: true,
             messages: [],
             message: "",
-            endPoint: "http://localhost:5000",
+            endPoint: "https://backend-babble.herokuapp.com",
             socket: "",
             selectedChatCompare: null,
             socketConnected: false,

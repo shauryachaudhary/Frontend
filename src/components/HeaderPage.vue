@@ -19,7 +19,7 @@
                 :src="$store.getters.user.avatar"
                 />
                 <div class="user-info">
-                    <h4 class="name">{{ $store.getters.profileStates.name }}</h4>
+                    <h4 class="name">{{ $store.getters.user.name }}</h4>
                 </div>
             </div>
             <UilSignOutAlt 
